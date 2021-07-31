@@ -1,8 +1,78 @@
 * {
     font-family: Arial, sans-serif;
-    text-align: center;
 }
 
 button {
     padding: 5px;
+}
+
+body {
+    background: #cbcbcb;
+    margin: 20px;
+}
+
+#header {
+    background: crimson;
+    font-size: x-large;
+    padding-left: 50px;
+    border-radius: 50px;
+    margin: 5px;
+    box-shadow: 0 0 10px grey; /* x offset, y offset, blur, color */
+}
+
+/* all h1 elements inside the header */
+#header h1 {
+    color: white;
+    display: inline-block;
+    perspective: 1000px;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    border-color: black;
+}
+
+#header #title {
+    font-weight: lighter;
+
+    animation-name: roll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#header #separator {
+    font-size: 300%;
+    font-weight: lighter;
+}
+
+#header span {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+#header span.fade {
+    opacity: 1;
+}
+
+#about {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Shows title for 0.8 * time, then performs rolling animation for the rest */
+@keyframes roll {
+    0% {
+        transform: rotateX(-90deg);
+    }
+    /* Spend most of the time displaying normally */
+    20% {
+        transform: rotateX(0deg);
+    }
+    80% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(90deg); /* change to 90 after fixing */
+    }
 }
