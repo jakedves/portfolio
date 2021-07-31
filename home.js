@@ -7,39 +7,13 @@ function nextTitle() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const title = document.querySelector('#title')
-    const name = document.querySelector('#name')
-    const nameArray = name.textContent.split("")
 
-    // Initialise name as many spans
-    name.textContent = ""
-    for(let i =0; i < nameArray.length; i++) {
-        name.innerHTML += "<span>" + nameArray[i] + "</span>"
-    }
-
-    let timer = setInterval(applyFade, 50)
-    let char = 0
-
-    function applyFade() {
-        const span = document.querySelectorAll('span')[char]
-        span.classList.add('fade');
-        char++;
-
-        if (char === nameArray.length) {
-            clearInterval(timer);
-            timer = null;
-            return;
-        }
-    }
-
-    document.querySelectorAll('button').forEach(button => {
-        button.onclick = () => {
-            // scroll to button's title
-            console.log(`Button pressed: ${button.dataset.where}`)
-        }
-    })
-
-    setInterval(() => {
-        title.innerHTML = nextTitle()
-    }, 3000)
+    /* Change the title every few seconds */
+    const title = document.querySelector('#title');
+    const interval = 3000;
+    setInterval(() => { // syncs animation with the change of title
+        title.style.animationPlayState = 'running';
+        title.style.animationDuration = `${interval}ms`;
+        title.textContent = nextTitle();
+    }, interval);
 })

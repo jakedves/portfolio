@@ -16,38 +16,40 @@
     </head>
     
     <body>
-        <div id="header">
-            <h1 id="name">Jake Davies</h1>
-            <h1 id="separator"> | </h1>
-            <h1 id="title">Software Developer</h1>
-        </div>
-        
-        <div id="buttons">
-            <button data-where="about">About Me</button>
-            <button data-where="projects">Projects & Experience</button>
-            <button data-where="contact">Contact</button>
-        </div>
-        
-        <section id="about">
-            <h2>About Me</h2>
-            <h3>What I Do</h3>
-            <h3>Skills</h3>
-            <h3>Interests</h3>
-        </section>
-        
-        <section id="projects">
+        <div class="container">
+            <section class="main">
+                <div> <!-- div places elements vertically -->
+                    <h1 id="name">Jake Davies</h1>
+                    <div class="box">
+                        <h1 id="title">Software Developer</h1>
+                    </div>
+                </div>
+            </section>
+            
+            <section class ="about">
+                <div>
+                    <h2>About Me</h2>
+                    <h3>What I Do</h3>
+                    <h3>Skills</h3>
+                    <h3>Interests</h3>
+                </div>
+            </section>
+    
             <!-- Projects should include: Image, Description, AppStore Link, Source Code, View on Instagram -->
-            <h2>Projects & Experience</h2>
-            <ul>
-                <li>Example Project</li>
-            </ul>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <h4>Email</h4>
-            <h4>Instagram</h4>
-            <h4>LinkedIn</h4>
-        </section>
+            <section class="projects">
+                <div>
+                    <h2>Projects & Experience</h2>
+                </div>
+            </section>
+            
+            <section class="contact">
+                <div>
+                    <h2>Contact</h2>
+                    <h4>Email</h4>
+                    <h4>Instagram</h4>
+                    <h4>LinkedIn</h4>
+                </div>
+            </section>
+        </div>
     </body>
 </html>

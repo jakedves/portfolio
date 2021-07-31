@@ -1,78 +1,84 @@
 * {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding and border included in render of element */
 }
 
-button {
+.container {
+    height: 100vh; /* prevents addition of another scroll bar */
+    scroll-snap-type: y mandatory; /* adds a vertical scroll snap, mandatory means always snaps even on tiny scroll */
+    overflow-y: scroll;
+}
+
+section {
+    height: 100vh; /* take up all vertical height available */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* we can adjust the size of these sections by adding height: (n) vh */
+.main {
+    background: white;
+}
+
+.main #name {
+    font-size: 500%;
     padding: 5px;
+    display: block;
 }
 
-body {
-    background: #cbcbcb;
-    margin: 20px;
-}
-
-#header {
-    background: crimson;
-    font-size: x-large;
-    padding-left: 50px;
-    border-radius: 50px;
-    margin: 5px;
-    box-shadow: 0 0 10px grey; /* x offset, y offset, blur, color */
-}
-
-/* all h1 elements inside the header */
-#header h1 {
-    color: white;
-    display: inline-block;
-    perspective: 1000px;
+.box {
+    background: red;
+    padding: 8px; /* vertical, horizontal */
+    border-radius: 10px;
     text-align: center;
-    position: relative;
-    bottom: 5px;
-    border-color: black;
 }
 
-#header #title {
-    font-weight: lighter;
-
+.main #title {
     animation-name: roll;
+    animation-fill-mode: forwards;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
 }
 
-#header #separator {
-    font-size: 300%;
-    font-weight: lighter;
+.about {
+    background: lightskyblue;
 }
 
-#header span {
+.projects {
+    background: lightcyan;
+}
+
+.contact {
+    background: lightgreen;
+}
+
+.main span {
     opacity: 0;
     transition: all 1s ease-out;
 }
 
-#header span.fade {
+.main span.fade {
     opacity: 1;
-}
-
-#about {
-    padding: 5px;
-    text-align: left;
 }
 
 /* Shows title for 0.8 * time, then performs rolling animation for the rest */
 @keyframes roll {
     0% {
-        transform: rotateX(-90deg);
+        transform: translate(0, 80%) rotateX(-90deg) ;
     }
     /* Spend most of the time displaying normally */
     20% {
-        transform: rotateX(0deg);
+        transform: translate(0, 0) rotateX(0deg);
     }
     80% {
-        transform: rotateX(0deg);
+        transform: translate(0, 0) rotateX(0deg);
     }
 
     100% {
-        transform: rotateX(90deg); /* change to 90 after fixing */
+        transform: translate(0, -80%) rotateX(90deg); /* change to 90 after fixing */
     }
 }
