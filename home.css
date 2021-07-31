@@ -32,7 +32,7 @@ section {
 
 .box {
     background: red;
-    padding: 8px; /* vertical, horizontal */
+    padding: 8px;
     border-radius: 10px;
     text-align: center;
 }
@@ -46,6 +46,113 @@ section {
 
 .about {
     background: lightskyblue;
+    justify-content: left;
+    align-items: start;
+    padding: 30px;
+}
+
+.about .title-container {
+    background: #b2e1ff; /* lightskyblue but with more whiteness */
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.about h2 {
+    font-size: 500%;
+    text-align: left;
+}
+
+.card-container {
+    display: inline-flex;
+}
+
+.card {
+    background: #c4e7ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 33%
+}
+
+.card h3 {
+    font-size: 300%;
+    padding-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 110%;
+}
+
+/* badges holds badge containers */
+.badges {
+    display: inline-flex;
+    height: 100%;
+}
+
+.badge-container {
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.badge {
+    color: white;
+    font-weight: normal;
+    background: orange;
+    padding: 5px 8px; /* vertical, horizontal */
+    margin: 5px;
+    border-radius: 5px;
+    width: 120px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.55);
+}
+
+#swiftui {
+    background: linear-gradient(90deg, rgba(16,75,216,1) 0%, rgba(0,244,247,1) 100%);
+}
+
+#swift {
+    background: linear-gradient(90deg, rgba(254,74,43,1) 0%, rgba(251,175,64,1) 100%);
+}
+
+#java {
+    background: rgba(254,74,43,1);
+}
+
+#javaswing {
+    background: crimson;
+}
+
+#python {
+    background: rgba(52,108,153,1);
+}
+
+#c {
+    background: rgba(0,89,156,1);
+}
+
+#uiux {
+    background: linear-gradient(90deg, rgba(35,95,139,1) 0%, rgba(254,74,43,1) 100%);;
+}
+
+#coredata {
+    background: linear-gradient(90deg, rgba(0,74,124,1) 0%, rgba(40,135,206,1) 100%);;
+}
+
+#sql {
+    background: linear-gradient(90deg, rgba(0,97,138,1) 0%, rgba(228,142,0,1) 100%);;
+}
+
+#html {
+    background: linear-gradient(90deg, rgba(228,77,38,1) 0%, rgba(241,101,41,1) 100%);;
+}
+
+#css {
+    background: linear-gradient(90deg, rgba(1,112,186,1) 0%, rgba(41,169,223,1) 100%);;
+}
+
+#javascript {
+    color: black;
+    background: rgba(247,223,30,1);
 }
 
 .projects {

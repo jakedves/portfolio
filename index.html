@@ -20,7 +20,7 @@
             <section class="main">
                 <div> <!-- div places elements vertically -->
                     <h1 id="name">Jake Davies</h1>
-                    <div class="box">
+                    <div class="box"> <!-- div allows me to apply background and animate text separately-->
                         <h1 id="title">Software Developer</h1>
                     </div>
                 </div>
@@ -28,10 +28,47 @@
             
             <section class ="about">
                 <div>
-                    <h2>About Me</h2>
-                    <h3>What I Do</h3>
-                    <h3>Skills</h3>
-                    <h3>Interests</h3>
+                    <div class="title-container">
+                        <h2>About Me</h2>
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card">
+                            <h3>What I Do</h3>
+                            <h4 id="whatido">AAAAA</h4>
+                        </div>
+        
+                        <div class="card">
+                            <h3>Skills</h3>
+                            <div class="badges">
+                                <div class="badge-container">
+                                    <h4 class="badge" id="swift">Swift</h4>
+                                    <h4 class="badge" id="swiftui">SwiftUI</h4>
+                                    <h4 class="badge" id="java">Java</h4>
+                                    <h4 class="badge" id="javaswing">Java Swing</h4>
+                                </div>
+    
+                                <div class="badge-container">
+                                    <h4 class="badge" id="python">Python</h4>
+                                    <h4 class="badge" id="c">C</h4>
+                                    <h4 class="badge" id="uiux">UI / UX</h4>
+                                    <h4 class="badge" id="coredata">Core Data</h4>
+                                </div>
+    
+                                <div class="badge-container">
+                                    <h4 class="badge" id="sql">SQL</h4>
+                                    <h4 class="badge" id="html">HTML 5</h4>
+                                    <h4 class="badge" id="css">CSS 3</h4>
+                                    <h4 class="badge" id="javascript">JavaScript</h4>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <h3>Interests</h3>
+                            <h4 id="interests">AAAAA</h4>
+                        </div>
+                    </div>
                 </div>
             </section>
     
