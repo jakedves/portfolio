@@ -1,7 +1,7 @@
 let index = 0;
 let titles = ['Software Engineer', 'iOS Developer', 'Computer Scientist', 'Java Developer']
 
-const whatido = 'I am an adaptable software developer, currently focused on iOS and web development, as well as UI/UX design.'
+const whatido = 'I am an adaptable software developer from London, currently focused on iOS and web development, as well as UI/UX design.\nI have also dabbled in some 3D game development using Unity and C#.'
 const interests = 'Besides programming, I have interests in both music composition, and guitar playing. I also play video games with my friends in my free time.'
 
 function nextTitle() {

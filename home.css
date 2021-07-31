@@ -45,17 +45,19 @@ section {
 }
 
 .about {
-    background: lightskyblue;
+    background: #59c3ff;
     justify-content: left;
     align-items: start;
     padding: 30px;
 }
 
 .about .title-container {
-    background: #b2e1ff; /* lightskyblue but with more whiteness */
+    background: #68c3ff; /* lightskyblue but with more whiteness */
     padding: 10px 30px;
     width: fit-content;
     border-radius: 20px;
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,
+    0 0 20px rgba(0, 0, 0, 0.55); /* Final shadow not part of effect, just drop shadow */
 }
 
 .about h2 {
@@ -65,14 +67,18 @@ section {
 
 .card-container {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    background: #c4e7ff;
+    background: #94d2ff;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    width: 33%
+    width: 33%;
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,
+    0 0 20px rgba(0, 0, 0, 0.55);
 }
 
 .card h3 {
@@ -103,7 +109,8 @@ section {
     margin: 5px;
     border-radius: 5px;
     width: 120px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.55);
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,
+    0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 #swiftui {
@@ -186,6 +193,14 @@ section {
     }
 
     100% {
-        transform: translate(0, -80%) rotateX(90deg); /* change to 90 after fixing */
+        transform: translate(0, -80%) rotateX(90deg);
     }
 }
+
+
+
+
+
+
+
+
