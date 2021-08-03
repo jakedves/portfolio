@@ -45,19 +45,20 @@ section {
 }
 
 .about {
-    background: #a3dcff;
     justify-content: left;
     align-items: start;
     padding: 30px;
+    background: linear-gradient(30deg, rgb(1, 137, 229) 0%,
+        rgb(60, 175, 224) 57%, rgb(132, 137, 245) 89%, rgb(99, 121, 211) 98%);;
 }
 
 .about .title-container {
-    background: #68c3ff; /* lightskyblue but with more whiteness */
+    background: rgba(104, 195, 255, 0.1);
     padding: 10px 30px;
     width: fit-content;
     border-radius: 20px;
-    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,
-    0 0 20px rgba(0, 0, 0, 0.55); /* Final shadow not part of effect, just drop shadow */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .about h2 {
@@ -72,18 +73,26 @@ section {
 }
 
 .card {
-    background: #67bcff;
+    background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
     width: 33%;
-    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,
-    0 0 20px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .card h3 {
-    font-size: 300%;
+    font-size: 175%;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .card h4 {
@@ -109,8 +118,9 @@ section {
     margin: 5px;
     border-radius: 5px;
     width: 120px;
-    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, .25) inset,
-    0 0 5px rgba(0, 0, 0, 0.35);
+    opacity: 0.9;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 #swiftui {
