@@ -12,7 +12,7 @@
 }
 
 section {
-    height: 100vh; /* take up all vertical height available */
+    height: 100%; /* take up all vertical height available */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +45,10 @@ section {
 }
 
 .about {
-    justify-content: left;
-    align-items: start;
+    flex-direction: column;
     padding: 30px;
     background: linear-gradient(30deg, rgb(1, 137, 229) 0%,
-        rgb(60, 175, 224) 57%, rgb(132, 137, 245) 89%, rgb(99, 121, 211) 98%);;
+        rgb(60, 175, 224) 57%, rgb(132, 137, 245) 89%, rgb(99, 121, 211) 98%);
 }
 
 .about .title-container {
@@ -61,14 +60,15 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.about h2 {
+.about .title {
     font-size: 500%;
-    text-align: left;
+    text-align: center;
 }
 
 .card-container {
-    display: inline-flex;
-    justify-content: center;
+    display: flex; /** by default a row flex */
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -77,6 +77,7 @@ section {
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
+    height: 350px;
     width: 33%;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
@@ -100,12 +101,12 @@ section {
 }
 
 /* badges holds badge containers */
-.badges {
+.badge-column-container {
     display: inline-flex;
     height: 100%;
 }
 
-.badge-container {
+.badge-column {
     height: 100%;
     justify-content: space-evenly;
 }

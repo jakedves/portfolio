@@ -4,11 +4,6 @@
         <meta charset="UTF-8">
         <title>Jake Davies</title>
         
-        <!-- React and JSX installs -->
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-        
         <!-- Components -->
         <script src="home.js"></script>
         
@@ -27,47 +22,47 @@
             </section>
             
             <section class ="about">
-                <div>
-                    <div class="title-container">
-                        <h2>About me</h2>
+                <div class="title-container">
+                    <h2 class="title">About me</h2>
+                </div>
+                
+                <!-- This will be the flexbox -->
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Who I am</h3>
+                        <h4 id="whatido">PLACEHOLDER</h4>
                     </div>
-                    
-                    <div class="card-container">
-                        <div class="card">
-                            <h3>Who I am</h3>
-                            <h4 id="whatido">PLACEHOLDER</h4>
-                        </div>
-        
-                        <div class="card">
-                            <h3>Skills</h3>
-                            <div class="badges">
-                                <div class="badge-container">
-                                    <h4 class="badge" id="swift">Swift</h4>
-                                    <h4 class="badge" id="swiftui">SwiftUI</h4>
-                                    <h4 class="badge" id="java">Java</h4>
-                                    <h4 class="badge" id="javaswing">Java Swing</h4>
-                                </div>
     
-                                <div class="badge-container">
-                                    <h4 class="badge" id="python">Python</h4>
-                                    <h4 class="badge" id="c">C</h4>
-                                    <h4 class="badge" id="uiux">UI / UX</h4>
-                                    <h4 class="badge" id="coredata">Core Data</h4>
-                                </div>
-    
-                                <div class="badge-container">
-                                    <h4 class="badge" id="sql">SQL</h4>
-                                    <h4 class="badge" id="html">HTML 5</h4>
-                                    <h4 class="badge" id="css">CSS 3</h4>
-                                    <h4 class="badge" id="javascript">JavaScript</h4>
-                                </div>
+                    <div class="card">
+                        <h3>Skills</h3>
+                        
+                        <div class="badge-column-container">
+                            <div class="badge-column">
+                                <h4 class="badge" id="swift">Swift</h4>
+                                <h4 class="badge" id="swiftui">SwiftUI</h4>
+                                <h4 class="badge" id="java">Java</h4>
+                                <h4 class="badge" id="javaswing">Java Swing</h4>
+                            </div>
+            
+                            <div class="badge-column">
+                                <h4 class="badge" id="python">Python</h4>
+                                <h4 class="badge" id="c">C</h4>
+                                <h4 class="badge" id="uiux">UI / UX</h4>
+                                <h4 class="badge" id="coredata">Core Data</h4>
+                            </div>
+            
+                            <div class="badge-column">
+                                <h4 class="badge" id="sql">SQL</h4>
+                                <h4 class="badge" id="html">HTML 5</h4>
+                                <h4 class="badge" id="css">CSS 3</h4>
+                                <h4 class="badge" id="javascript">JavaScript</h4>
                             </div>
                         </div>
-        
-                        <div class="card">
-                            <h3>Interests</h3>
-                            <h4 id="interests">PLACEHOLDER</h4>
-                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Interests</h3>
+                        <h4 id="interests">PLACEHOLDER</h4>
                     </div>
                 </div>
             </section>
