@@ -22,5 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#interests').textContent = interests
     document.querySelector('#whatido').textContent = whatido
-
 })
