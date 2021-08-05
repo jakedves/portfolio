@@ -139,7 +139,7 @@
     opacity: 0.5;
 }
 
-.card:hover {
+.card:hover, .card:focus, .card:active {
     opacity: 1;
     transform: scale(1.1);
 }
