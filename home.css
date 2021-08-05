@@ -136,12 +136,23 @@
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     transition: 0.5s;
-    opacity: 0.5;
 }
 
-.card:hover, .card:focus, .card:active {
-    opacity: 1;
-    transform: scale(1.1);
+@media (hover: hover) {
+    .card {
+        opacity: 0.5;
+    }
+
+    .card:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@media not (hover: hover) {
+    .card {
+        opacity: 1;
+    }
 }
 
 .card h3 {
