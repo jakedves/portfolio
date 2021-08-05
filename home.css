@@ -149,12 +149,6 @@
     }
 }
 
-@media not (hover: hover) {
-    .card {
-        opacity: 1;
-    }
-}
-
 .card h3 {
     font-size: 175%;
     padding-bottom: 20px;
