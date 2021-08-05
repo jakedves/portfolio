@@ -20,6 +20,15 @@
     scroll-snap-align: start;
 }
 
+.title {
+    font-size: 500%;
+    background: rgba(104, 195, 255, 0.1);
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
 /* MAIN PAGE CODE */
 .main {
     background: white;
@@ -84,7 +93,7 @@
     overflow-y: scroll;
     -ms-overflow-style: none; /* For Internet explorer, Edge */
     color: white;
-    background: linear-gradient(180deg, rgb(0, 21, 255) 0%, rgb(74, 88, 255) 100%)
+    background: linear-gradient(180deg, rgb(0, 21, 255) 0%, rgb(74, 88, 255) 100%);
 }
 
 .about::-webkit-scrollbar { /* Chrome, Safari, Opera */
@@ -222,15 +231,112 @@
 
 /* PROJECTS PAGE CODE */
 .projects {
-    background: #c49438;
+    background: linear-gradient(135deg, crimson, #d33253);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* For Internet explorer, Edge */
+}
+
+.projects::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none;
+}
+
+.project {
+    background: rgba(104, 195, 255, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: end;
+
+    padding: 10px 30px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.project img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.project .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    max-width: 80%;
+}
+
+.description-container {
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    padding: 20px;
+}
+
+.button-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project p {
+    padding-top: 5px;
+}
+
+.button-container button {
+    border: none;
+    padding: 1rem 2rem;
+    margin: 5px;
+
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.33);
+    color: #ffffff;
+    width: 150px;
+
+    cursor: pointer;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button-container button:hover, .button-container button:focus {
+    background: rgba(0, 0, 0, 0.51);
+}
+
+.button-container button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.button-container button:active {
+    transform: scale(0.99);
 }
 
 /* CONTACT PAGE CODE */
 .contact {
-    background: #41ef41;
+    background: darkgreen;
 }
-
-
 
 
 

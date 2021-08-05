@@ -12,6 +12,8 @@
     
     <body>
         <div class="container">
+    
+            <!-- MAIN -->
             <section class="page main">
                 <div> <!-- div places elements vertically -->
                     <h1 id="name">Jake Davies</h1>
@@ -20,11 +22,10 @@
                     </div>
                 </div>
             </section>
-            
+    
+            <!-- ABOUT -->
             <section class ="page about">
-                <div class="title-container">
-                    <h2 class="title">About me</h2>
-                </div>
+                <h2 class="title">About Me</h2>
                 
                 <!-- This will be the flexbox -->
                 <div class="card-container">
@@ -89,36 +90,120 @@
                     </div>
                 </div>
             </section>
-    
-            <!-- Projects should include: Image, Description, AppStore Link, Source Code, View on Instagram -->
-            <section class="page projects">
-                <div class="projects-title-container">
-                    <h2>Projects & Experience</h2>
-                </div>
-                <div class="projects-container">
-                    
-                    <div class="project" id="recipe-builder">
-                        <h1 class="project-name">Recipe Builder for iOS</h1>
-                        <h2 class="project-heading">Description</h2>
-                    
-                    </div>
-                    <div class="project" id="color-capsule">
-                        <h1 class="project-name">Color Capsule for iOS</h1>
-                        <h2 class="project-heading">Description</h2>
-                    
-                    </div>
-                    <div class="project" id="personal-website">
-                        <h1 class="project-name">Portfolio Website</h1>
-                        <h2 class="project-heading">Description</h2>
-                    
-                    </div>
-                </div>
-                
-            </section>
             
+            <!-- PROJECTS -->
+            <section class="page projects">
+                <div class="projects-container">
+                    <h1 class="title">Personal Projects</h1>
+                    
+                    <div class="project recipe-builder">
+                        <div class="left">
+                            <img src="recipe-builder.jpg" alt="A screenshot from the Recipe Builder iOS app">
+                            <div class="description-container">
+                                <h1>Recipe-Builder for iOS</h1>
+                                <p>
+                                    The Recipe Builder iOS app is a user-friendly, convenient way
+                                    for users to create, store and view recipes.
+                                </p>
+                                <p>
+                                    It features an elegant UI, in both light and dark mode, that's simple
+                                    to use but also very powerful, allowing users to quickly save their recipes.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="button-container">
+                            <button>Instagram</button>
+                            <button>GitHub</button>
+                            <button>AppStore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project color-capsule">
+                        <div class="left">
+                            <img src="color-capsule.jpg" alt="A screenshot from the Color Capsule iOS app">
+                            <div class="description-container">
+                                <h1>Color Capsule for iOS (W.I.P)</h1>
+                                <p>
+                                    Color Capsule is a must-have app for UI designers. It lets you analyse colors on the go,
+                                    and provides quick guidelines for UI and UX design.
+                                </p>
+                                <p>
+                                    Not only does it feature the ability to generate suggested colors from a color given,
+                                    but also is packed with short tutorials as a quick reference.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="button-container">
+                            <button>Instagram</button>
+                            <button>GitHub</button>
+                            <button>AppStore</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="project glassmorphism">
+                        <div class="left">
+                            <img src="glassmorphism.jpg" alt="A screenshot from the Glassmorphism iOS app">
+                            <div class="description-container">
+                                <h1>Glassmorphism (SwiftUI Demo)</h1>
+                                <p>
+                                    This app was made to demo one way to create glassmorphic cards in SwiftUI. The demo
+                                    was used in a tutorial I made on instagram.
+                                </p>
+                                <p>
+                                    See the tutorial <a href="https://www.instagram.com/p/CSKNwXgMmY8/">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="button-container">
+                            <button>Instagram</button>
+                            <button>GitHub</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project portfolio">
+                        <div class="description-container">
+                            <h1>This Website!</h1>
+                            <p>
+                                This website you're on right now was made by myself, using HTML 5, CSS 3 and JavaScript.
+                            </p>
+                        </div>
+                        <div class="button-container">
+                            <button>Instagram</button>
+                            <button>GitHub</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project joined-together">
+                        <div class="left">
+                            <img src="joined-together.jpg" alt="A screenshot from the Joined Together, 3D unity game">
+                            <div class="description-container">
+                                <h1>Joined Together, Worlds Apart</h1>
+                                <p>
+                                    This game was made, in less than 48h with myself and two friends. It features two 3D
+                                    worlds, with a character that is stuck between them and must keep switching between
+                                    the worlds to escape them.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="button-container">
+                            <button>Instagram</button>
+                            <button>GitHub</button>
+                            <button>Download for Windows</button>
+                            <button>Download for MacOS</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- CONTACT -->
             <section class="page contact">
+                <h2 class="title">Contact</h2>
                 <div>
-                    <h2>Contact</h2>
                     <h4>Email</h4>
                     <h4>Instagram</h4>
                     <h4>LinkedIn</h4>
