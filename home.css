@@ -12,8 +12,9 @@
 }
 
 section {
-    height: 100%; /* take up all vertical height available */
+    min-height: 100%;
     display: flex;
+    padding: 30px;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
@@ -46,9 +47,18 @@ section {
 
 .about {
     flex-direction: column;
-    padding: 30px;
+    justify-content: start;
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* For Internet explorer, Edge */
     background: linear-gradient(30deg, rgb(1, 137, 229) 0%,
-        rgb(60, 175, 224) 57%, rgb(132, 137, 245) 89%, rgb(99, 121, 211) 98%);
+        rgb(60, 175, 224) 57%,
+        rgb(132, 137, 245) 89%,
+        rgb(99, 121, 211) 98%);
+}
+
+.about::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .about .title-container {
@@ -66,19 +76,24 @@ section {
 }
 
 .card-container {
+    width: 100%;
     display: flex; /** by default a row flex */
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 30px;
 }
 
 .card {
+    height: 350px;
+    min-width: 200px;
+    max-width: 300px;
+
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    height: 350px;
-    width: 33%;
+
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     transition: 0.5s;
@@ -102,7 +117,7 @@ section {
 
 /* badges holds badge containers */
 .badge-column-container {
-    display: inline-flex;
+    display: flex;
     height: 100%;
 }
 
@@ -112,16 +127,18 @@ section {
 }
 
 .badge {
-    color: white;
-    font-weight: normal;
-    background: orange;
+    background: rgba(255, 165, 0, 1);
     padding: 5px 8px; /* vertical, horizontal */
     margin: 5px;
     border-radius: 5px;
     width: 120px;
-    opacity: 0.9;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+}
+
+.badge .badge-content {
+    color: white;
+    font-weight: bold;
 }
 
 #swiftui {
