@@ -22,6 +22,7 @@
 
 .title {
     font-size: 500%;
+    font-weight: bold;
     background: rgba(104, 195, 255, 0.1);
     padding: 10px 30px;
     width: fit-content;
@@ -36,6 +37,7 @@
 
 .main #name {
     font-size: 500%;
+    font-weight: bold;
     padding: 5px;
     display: block;
 }
@@ -48,6 +50,9 @@
 }
 
 .main #title {
+    font-size: x-large;
+    font-weight: bold;
+
     animation-name: roll;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -93,7 +98,7 @@
     overflow-y: scroll;
     -ms-overflow-style: none; /* For Internet explorer, Edge */
     color: white;
-    background: linear-gradient(180deg, rgb(0, 21, 255) 0%, rgb(74, 88, 255) 100%);
+    background: linear-gradient(180deg, lightskyblue 0%, rgb(139, 147, 255) 100%);
 }
 
 .about::-webkit-scrollbar { /* Chrome, Safari, Opera */
@@ -123,14 +128,17 @@
     padding: 30px;
 }
 
-.card {
-    height: 400px;
+.about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+
     min-width: 200px;
     max-width: 300px;
 
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
-    margin: 20px;
     border-radius: 20px;
 
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -139,24 +147,27 @@
 }
 
 @media (hover: hover) {
-    .card {
+    .about-card {
         opacity: 0.5;
     }
 
-    .card:hover {
+    .about-card:hover {
         opacity: 1;
         transform: scale(1.1);
     }
 }
 
-.card h3 {
+.about-card h3 {
     font-size: 175%;
+    font-weight: bold;
     padding-bottom: 20px;
     text-transform: uppercase;
 }
 
-.card p {
-    font-size: 110%;
+.about-card p {
+    font-family: Arial, sans-serif;
+    font-size: 105%;
+    font-weight: normal;
     padding-bottom: 15px;
 }
 
@@ -236,7 +247,7 @@
 
 /* PROJECTS PAGE CODE */
 .projects {
-    background: linear-gradient(135deg, crimson, #d33253);
+    background: linear-gradient(135deg, #d93152, #c74861);
 
     display: flex;
     flex-direction: column;
@@ -342,7 +353,7 @@
 
 /* CONTACT PAGE CODE */
 .contact-me {
-    background: linear-gradient(45deg, #009a00, #007900);
+    background: linear-gradient(45deg, #5ba45b, #76c476);
     display: flex;
     height: 100%;
     overflow-y: scroll;
@@ -352,35 +363,41 @@
     align-items: center;
 }
 
-.contact-me::-webkit-scrollbar {
-    display: none;
-}
-
-.contacts-container {
+.contact-card {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-}
 
-.contacts-container .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    padding: 10px 30px;
-    margin: 15px;
+    padding: 30px 40px;
+    margin: 25px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
 }
 
-.contact .address {
-    color: white;
-    padding: 15px;
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.contact a {
+.contact-type {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.contact h2 {
+    font-size: medium;
+}
+
+.address a {
+    font-size: medium;
+    color: white;
+}
+
+.address a:visited {
+    font-size: medium;
     color: white;
 }
