@@ -68,27 +68,7 @@
     opacity: 1;
 }
 
-/* Shows title for 0.8 * time, then performs rolling animation for the rest */
-@keyframes roll {
-    0% {
-        transform: translate(0, 80%) rotateX(-90deg);
-        opacity: 0;
-    }
-    /* Spend most of the time displaying normally */
-    20% {
-        transform: translate(0, 0) rotateX(0deg);
-        opacity: 1;
-    }
-    80% {
-        transform: translate(0, 0) rotateX(0deg);
-        opacity: 1;
-    }
 
-    100% {
-        transform: translate(0, -80%) rotateX(90deg);
-        opacity: 0;
-    }
-}
 
 /* ABOUT PAGE CODE */
 .about {
