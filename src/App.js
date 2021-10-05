@@ -1,5 +1,6 @@
 import "./App.css";
 import Home from "./Home.js";
+import About from "./About.js";
 
 function App() {
   // pages should include:
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Home />
+      <About />
     </div>
   );
 }
