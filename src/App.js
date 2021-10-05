@@ -1,11 +1,11 @@
 import "./App.css";
 import Home from "./Home.js";
-import Navigation from "./Navigation.js";
 
 function App() {
+  // pages should include:
+  // About, Projects, Degree, Contact
   return (
     <div className="App">
-      <Navigation />
       <Home />
     </div>
   );
