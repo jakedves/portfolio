@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./Home.js";
 import About from "./About.js";
+import Projects from "./Projects";
 
 function App() {
   // pages should include:
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Home />
       <About />
+      <Projects />
     </div>
   );
 }
