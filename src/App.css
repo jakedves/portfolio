@@ -68,6 +68,7 @@
 .about {
   min-height: 150vh;
   background: #202020;
+  overflow: auto;
 }
 
 .about .about-text {
@@ -77,8 +78,7 @@
 }
 
 .about .about-title {
-  /* Margin here adds space to bottom of home rather
-  than top of about section ?? */
+  margin: 50px 0 0 0;
   font-size: 120px;
 }
 
