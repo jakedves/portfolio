@@ -14,7 +14,7 @@ export default function About() {
       <div className="about-card-container">
         {/* Mario Kart Wii, Health, AoT, STUDYING */}
         <AboutCard title="Playing" imagePath={MKW} />
-        <AboutCard title="Working On" description="my sigma mindset" />
+        <AboutCard title="Working On" description="" />
         <AboutCard title="Watching" imagePath={SquidGame} />
         <AboutCard title="Studying" />
       </div>

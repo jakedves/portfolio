@@ -74,12 +74,13 @@
 .about .about-text {
   margin: 50px auto;
   max-width: 70%;
-  color: #e9e1dd;
+  color: #ev9e1dd;
 }
 
 .about .about-title {
   margin: 80px 0 0 0;
   font-size: 120px;
+  color: #e9e1dd;
 }
 
 .about .about-body {
@@ -124,4 +125,15 @@
   margin-top: 20px;
   border-radius: 20px;
   visibility: visible;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  background: #202020;
+}
+
+.projects .projects-title {
+  font-size: 120px;
+  color: #e9e1dd;
+  text-align: center;
 }
