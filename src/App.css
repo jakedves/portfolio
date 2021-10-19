@@ -81,6 +81,13 @@
   margin: 80px 0 0 0;
   font-size: 120px;
   color: #e9e1dd;
+  transition: 0.5s;
+}
+
+@media (hover: hover) {
+  .about-title:hover {
+    transform: scale(1.1);
+  }
 }
 
 .about .about-body {
