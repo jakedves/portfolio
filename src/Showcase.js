@@ -1,8 +1,13 @@
-export default function Showcase(projects) {
+import ShowcaseItem from "./ShowcaseItem";
+
+export default function Showcase(props) {
+  /* We will add a Showcase Item component which will represent our projects */
+  let right = true;
+
   return (
-    <div>
-      {projects.map((project) => (
-        <div>Project</div>
+    <div className="showcase">
+      {props.projects.map((project) => (
+        <ShowcaseItem rightAligned={(right = !right)} />
       ))}
     </div>
   );
