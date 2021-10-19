@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AboutCard from "./AboutCard.js";
 import AboutText from "./AboutText.js";
 import MKW from "./MarioKartWii.png";
