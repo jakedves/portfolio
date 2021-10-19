@@ -7,7 +7,7 @@ export default function Showcase(props) {
   return (
     <div className="showcase">
       {props.projects.map((project) => (
-        <ShowcaseItem rightAligned={(right = !right)} />
+        <ShowcaseItem project={project} rightAligned={(right = !right)} />
       ))}
     </div>
   );
