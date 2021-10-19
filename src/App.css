@@ -74,7 +74,7 @@
 .about .about-text {
   margin: 50px auto;
   max-width: 70%;
-  color: #ev9e1dd;
+  color: #e9e1dd;
 }
 
 .about .about-title {
@@ -145,6 +145,10 @@
 }
 
 .projects .showcase .showcase-item {
-  color: white;
-  padding: 20px 0;
+  color: #e9e1dd;
+  padding: 50px 0;
+}
+
+.showcase .right-aligned {
+  text-align: right;
 }
