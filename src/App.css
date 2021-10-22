@@ -168,3 +168,11 @@
 .showcase .right-aligned {
   text-align: right;
 }
+
+/* Tool Badges */
+.tool {
+  padding: 10px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}

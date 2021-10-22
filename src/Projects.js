@@ -10,7 +10,13 @@ export default function Projects() {
        of a recipe, how many calories it has, or anything else you don't care about. Aimed at students, Recipe Builder is 
        the most convenient solution available. Download on the App Store today.`,
       image: RecipeBuilder,
-      tools: ["Swift", "SwiftUI", "UIKit", "Core Data", "CloudKit"],
+      tools: [
+        { tool: "Swift", color: "orange" },
+        { tool: "SwiftUI", color: "blue" },
+        { tool: "UIKit", color: "skyblue" },
+        { tool: "Core Data", color: "blue" },
+        { tool: "CloudKit", color: "skyblue" },
+      ],
     },
     {
       name: "The JDX Compiler",
@@ -20,7 +26,13 @@ export default function Projects() {
       name: "Sleep & Mood Tracker for Desktop",
       desc: `A Java app that tracks a users mood and sleep over time, giving them tips on how to 
       improve their lifestyle`,
-      tools: ["Java", "Java Swing", "SQL", "JFreeChart", "Scrum Methodology"],
+      tools: [
+        { tool: "Java", color: "orange" },
+        { tool: "Java Swing", color: "yellow" },
+        { tool: "JFreeChart", color: "green" },
+        ,
+        { tool: "Scrum Methodology", color: "blue" },
+      ],
     },
     {
       name: "Worlds Apart",
@@ -32,7 +44,26 @@ export default function Projects() {
        \n
        This game was made using Unity3D, C# and we worked with pair programming, and designed the map ourselves. The assets
         used in the game were all free assets from the Unity Asset Store.`,
-      tools: ["C#", "Unity 3D", "Unity Animator", "Scripting"],
+      tools: [
+        { tool: "C#", color: "purple" },
+        { tool: "Unity 3D", color: "grey" },
+        { tool: "Unity Animator", color: "grey" },
+        { tool: "Scripting", color: "red" },
+        { tool: "Pair Programming", color: "green" },
+        { tool: "Level Design", color: "blue" },
+      ],
+    },
+    {
+      name: "This Website!",
+      desc: `This is my portfolio website. I wanted to use a framework like React to build it as that's one of the frameworks that
+       was used to inspire SwiftUI. The declarative and reactive nature allows interfaces to be created very quickly, and allows us to
+       separate components very easily, like other objects.`,
+      tools: [
+        { tool: "HTML", color: "red" },
+        { tool: "CSS", color: "blue" },
+        { tool: "JavaScript", color: "yellow" },
+        { tool: "React", color: "blue" },
+      ],
     },
   ];
 

@@ -1,3 +1,6 @@
+import Projects from "./Projects";
+import BadgeList from "./BadgeList";
+
 export default function ShowcaseItem({ project, rightAligned }) {
   return (
     <div
@@ -12,6 +15,8 @@ export default function ShowcaseItem({ project, rightAligned }) {
         {/* attributes here are empty */}
         <strong>{project.name}</strong>
         <p>{project.desc}</p>
+
+        {project.tools ? <BadgeList tools={project.tools} /> : null}
       </div>
     </div>
   );
