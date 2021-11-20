@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Home() {
   const titles = [
+    "Software Engineer",
     "iOS Developer",
     "Java Developer",
     "Web Developer",
