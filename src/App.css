@@ -66,7 +66,7 @@
 }
 /* ABOUT SECTION */
 .about {
-  min-height: 150vh;
+  min-height: 80vh;
   background: #202020;
   overflow: auto;
 }
@@ -163,6 +163,8 @@
 .projects .showcase .showcase-item img {
   height: 500px;
   object-fit: contain;
+  max-width: 24%;
+  border-radius: 5%;
 }
 
 .showcase .right-aligned {

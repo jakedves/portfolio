@@ -1,5 +1,6 @@
 import Showcase from "./Showcase";
 import RecipeBuilder from "./RecipeBuilderiOS.png";
+import SleepTracker from "./SleepAndMood.png";
 
 export default function Projects() {
   let projects = [
@@ -26,11 +27,11 @@ export default function Projects() {
       name: "Sleep & Mood Tracker for Desktop",
       desc: `A Java app that tracks a users mood and sleep over time, giving them tips on how to 
       improve their lifestyle`,
+      image: SleepTracker,
       tools: [
         { tool: "Java", color: "orange" },
         { tool: "Java Swing", color: "yellow" },
         { tool: "JFreeChart", color: "green" },
-        ,
         { tool: "Scrum Methodology", color: "blue" },
       ],
     },
