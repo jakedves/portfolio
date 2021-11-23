@@ -11,7 +11,9 @@
 export default function UnitCard({ unitTitle, unitDesc, unitGrade, unitLink }) {
   return (
     <div className="unit-card">
-      <h2 className="unit-card-head">{unitTitle}</h2>
+      <a href={unitLink}>
+        <h2 className="unit-card-head">{unitTitle}</h2>
+      </a>
       <p className="unit-card-desc">{unitDesc}</p>
       <footer className="unit-card-grade">
         Grade: {unitGrade ? unitGrade : "N/A"}

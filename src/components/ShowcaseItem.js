@@ -1,4 +1,3 @@
-import Projects from "./Projects";
 import BadgeList from "./BadgeList";
 
 export default function ShowcaseItem({ project, rightAligned }) {

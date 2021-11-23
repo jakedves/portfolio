@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home-content">
-        <h1>Jake Davies</h1>
+        <h1 className="home-header">Jake Davies</h1>
 
         <div className="title-box">
           <h3>{titles[title % titles.length]}</h3>
