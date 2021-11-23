@@ -1,8 +1,5 @@
 import React from "react";
-import AboutCard from "./AboutCard.js";
 import AboutText from "./AboutText.js";
-import MKW from "./MarioKartWii.png";
-import SquidGame from "./SquidGame.jpg";
 
 export default function About() {
   return (

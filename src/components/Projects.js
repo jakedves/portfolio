@@ -1,6 +1,6 @@
 import Showcase from "./Showcase";
-import RecipeBuilder from "./RecipeBuilderiOS.png";
-import SleepTracker from "./SleepAndMood.png";
+import RecipeBuilder from "../images/RecipeBuilderiOS.png";
+import SleepTracker from "../images/SleepAndMood.png";
 
 export default function Projects() {
   let projects = [
@@ -18,10 +18,6 @@ export default function Projects() {
         { tool: "Core Data", color: "blue" },
         { tool: "CloudKit", color: "skyblue" },
       ],
-    },
-    {
-      name: "The JDX Compiler",
-      desc: "A compiler written in Swift",
     },
     {
       name: "Sleep & Mood Tracker for Desktop",

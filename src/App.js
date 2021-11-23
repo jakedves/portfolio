@@ -1,7 +1,7 @@
-import "./App.css";
-import Home from "./Home.js";
-import About from "./About.js";
-import Projects from "./Projects";
+import "./styles/App.css";
+import Home from "./components/Home.js";
+import About from "./components/About.js";
+import Projects from "./components/Projects";
 
 function App() {
   // pages should include:
