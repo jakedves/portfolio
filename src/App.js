@@ -1,5 +1,6 @@
 import "./styles/App.css";
 import "./styles/Text.css";
+import "./styles/Education.css";
 import Home from "./components/Home.js";
 import About from "./components/About.js";
 import Projects from "./components/Projects";

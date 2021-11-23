@@ -8,15 +8,15 @@
  * @param unitLink: The link to that unit in the University of Bath catalogue
  * @returns
  */
-export default function UnitCard({ unitTitle, unitDesc, unitGrade, unitLink }) {
+export default function UnitCard({ unit }) {
   return (
     <div className="unit-card">
-      <a href={unitLink}>
-        <h2 className="unit-card-head">{unitTitle}</h2>
+      <a href={unit.unitLink} target="_blank">
+        <h4 className="unit-card-head">{unit.unitTitle}</h4>
       </a>
-      <p className="unit-card-desc">{unitDesc}</p>
+      <p className="unit-card-desc">{unit.unitDesc}</p>
       <footer className="unit-card-grade">
-        Grade: {unitGrade ? unitGrade : "N/A"}
+        Grade: {unit.unitGrade ? unit.unitGrade : "N/A"}
       </footer>
     </div>
   );

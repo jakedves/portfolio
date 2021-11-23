@@ -1,0 +1,45 @@
+/*
+This style sheet defines the styles used in the education section.
+*/
+.unit-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.unit-card {
+  width: 20%;
+  height: 300px;
+  text-align: center;
+  background: #e9e1dd;
+  border-radius: 15px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.unit-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.unit-card a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.unit-card h4 {
+  margin: 10px;
+  color: #000000;
+}
+
+.unit-card p {
+  margin: 15px;
+  color: black;
+  text-align: left;
+}
+
+.unit-card footer {
+  position: absolute;
+  bottom: 5px;
+  left: 35%; /* THIS ISNT WORKING */
+}

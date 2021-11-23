@@ -1,5 +1,9 @@
 import UnitCard from "./UnitCard";
 
+/**
+ * This component contains all the information regarding my education at the University of Bath.
+ * I had highlight cards showcasing the key modules I have undertaken (or am undertaking).
+ */
 export default function Education() {
   let units = [
     {
@@ -19,6 +23,7 @@ export default function Education() {
       unitDesc: `A practical based introduction to writing good quality software, with object orientation in C, Java and Python. This unit covered GUIs,
       multi-threading, networking, object orientation, memory management and was driven by practical based assignments.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM10228.html",
+      unitGrade: "87%",
     },
     {
       unitTitle: "Fundamentals of Visual Computing",
@@ -30,10 +35,10 @@ export default function Education() {
 
   return (
     <section className="education">
-      <h1 className="section-header">Education</h1>
+      <h1 className="section-title">Education</h1>
       <section className="unit-card-container">
         {units.map((unit) => {
-          return <UnitCard props={unit} />;
+          return <UnitCard unit={unit} />;
         })}
       </section>
     </section>
