@@ -20,7 +20,7 @@ export default function Education() {
     },
     {
       unitTitle: "Principles of Programming",
-      unitDesc: `A practical based introduction to writing good quality software, with object orientation in C, Java and Python. This unit covered GUIs,
+      unitDesc: `A practical based introduction to writing high quality software, with object orientation in C, Java and Python. This unit covered GUIs,
       multi-threading, networking, object orientation, memory management and was driven by practical based assignments.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM10228.html",
       unitGrade: "87%",
