@@ -10,7 +10,7 @@ export default function PreviewPrivate() {
       caption: "",
     },
   ];
-  let teaserTitle = "Want to see some more?";
+  let teaserTitle = "Want to see more?";
   let teaserText = `I have numerous, fully documented University projects that I can't make public for plagiarism reasons,
   however, I can still show off the code so don't hesitate to ask to see it!`;
 

@@ -19,14 +19,14 @@ export default function Education() {
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM20254.html",
     },
     {
-      unitTitle: "Principles of Programming 2",
+      unitTitle: "Principles of Programming",
       unitDesc: `A practical based introduction to writing good quality software, with object orientation in C, Java and Python. This unit covered GUIs,
       multi-threading, networking, object orientation, memory management and was driven by practical based assignments.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM10228.html",
       unitGrade: "87%",
     },
     {
-      unitTitle: "Fundamentals of Visual Computing",
+      unitTitle: "Visual Computing",
       unitDesc: `A study of the fundamental concepts used for graphics rendering, image manipulation, animation and more. This unit provided a way to 
       interact with graphics in WebGL, using Three.js and Python Labs to apply these concepts.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM20219.html",
