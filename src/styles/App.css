@@ -156,7 +156,8 @@ section {
   height: 500px;
   object-fit: contain;
   max-width: 24%;
-  border-radius: 5%;
+  border-radius: 15px;
+  margin: 0 20px;
 }
 
 .showcase .right-aligned {

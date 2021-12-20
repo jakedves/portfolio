@@ -1,6 +1,7 @@
 import Showcase from "./Showcase";
 import RecipeBuilder from "../images/RecipeBuilderiOS.png";
 import SleepTracker from "../images/SleepAndMood.png";
+import WorldsApart from "../images/WorldsApart.png";
 
 export default function Projects() {
   let projects = [
@@ -21,26 +22,23 @@ export default function Projects() {
     },
     {
       name: "Sleep & Mood Tracker for Desktop",
-      desc: `A Java app that tracks a users mood and sleep over time, giving them tips on how to 
-      improve their lifestyle`,
+      desc: `This application was built for Windows and macOS devices, and is a Java application that encourages users
+      to be more healthy and meet their sleep requirements, by logging their sleep against their mood and providing insights.`,
       image: SleepTracker,
       tools: [
         { tool: "Java", color: "orange" },
         { tool: "Java Swing", color: "yellow" },
-        { tool: "JFreeChart", color: "green" },
         { tool: "Scrum Methodology", color: "blue" },
+        { tool: "SQL", color: "blue" },
       ],
     },
     {
-      name: "Worlds Apart",
-      desc: `This game was a submission for the GMTK 2021 Game Jam, where we had 48 hours to design,
-       develop and submit a game, based on the theme: Joined Together. The basis of the game is that you are 
-       alone, lost in the world and you need to solve some puzzles to escape. Luckily for you, what you realise 
-       is that you are actually in two places, at once (or are you?), and you have to work with yourself on one side, 
-       to unlock puzzles on the other side.
-       \n
-       This game was made using Unity3D, C# and we worked with pair programming, and designed the map ourselves. The assets
-        used in the game were all free assets from the Unity Asset Store.`,
+      name: "GMTK 2021 Game Jam: Worlds Apart",
+      desc: `This game was a submission for a Game Jam, where we have 48 hours to design and develop a game based on the theme:
+       'Joined Together'. This game was built using Unity3D, along with C# and developed with pair programming. The concept behind
+       the game is that there's two worlds that you exist in simultaneously, and you're trying to bring them back together. Each world
+       replies on you to solve a puzzle that's based in the other world to progress.`,
+      image: WorldsApart,
       tools: [
         { tool: "C#", color: "purple" },
         { tool: "Unity 3D", color: "grey" },
@@ -52,9 +50,8 @@ export default function Projects() {
     },
     {
       name: "This Website!",
-      desc: `This is my portfolio website. I wanted to use a framework like React to build it as that's one of the frameworks that
-       was used to inspire SwiftUI. The declarative and reactive nature allows interfaces to be created very quickly, and allows us to
-       separate components very easily, like other objects.`,
+      desc: `This website is my portfolio. Built using HTML, CSS, JavaScript and React, this website shows off some of the areas
+      of Software Engineering I've been able to look into.`,
       tools: [
         { tool: "HTML", color: "red" },
         { tool: "CSS", color: "blue" },
