@@ -50,8 +50,7 @@ export default function Projects() {
     },
     {
       name: "This Website!",
-      desc: `This website is my portfolio. Built using HTML, CSS, JavaScript and React, this website shows off some of the areas
-      of Software Engineering I've been able to look into.`,
+      desc: `This website is my portfolio. Built using HTML, CSS, JavaScript and React.`,
       tools: [
         { tool: "HTML", color: "red" },
         { tool: "CSS", color: "blue" },

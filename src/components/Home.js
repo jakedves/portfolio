@@ -11,10 +11,6 @@ export default function Home() {
   ];
   const [title, setTitle] = useState(0);
 
-  function incrementTitle() {
-    setTitle((num) => (num + 1) % titles.length);
-  }
-
   /*  Consider the following flow:
   1. Perform first CSS animation (title goes up and disappears)
   2. After that animation has completed, increment title
@@ -22,26 +18,7 @@ export default function Home() {
   4. Pause for n seconds
   */
 
-  // useEffect: whenever title changes, start the animation (roll-in), wait 2.4 seconds, roll-out, updateTitle
-  function delay(time) {
-    return new Promise((resolve) => setTimeout(resolve, time));
-  }
-
-  useEffect(() => {
-    delay(2400).then(() => {
-      var titleElement = document.getElementById("my-title");
-
-      titleElement.style.animation = "roll-out 0.3 linear 1";
-      titleElement.style.animationPlayState = "paused";
-      titleElement.style.animationPlayState = "running";
-
-      setTitle((num) => (num + 1) % titles.length);
-
-      titleElement.style.animation = "roll-in 0.3 linear 1";
-      titleElement.style.animationPlayState = "paused";
-      titleElement.style.animationPlayState = "running";
-    });
-  }, [title, titles.length]);
+  // useEffect? whenever title changes, start the animation (roll-in), wait 2.4 seconds, roll-out, updateTitle
 
   return (
     <div className="home">
