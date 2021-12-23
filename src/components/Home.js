@@ -12,7 +12,7 @@ export default function Home() {
   const [title, setTitle] = useState(0);
 
   function incrementTitle() {
-    setTitle((title + 1) % titles.length);
+    setTitle((num) => (num + 1) % titles.length);
   }
 
   /*  Consider the following flow:
