@@ -1,0 +1,57 @@
+/*
+This CSS file contains all the style for our inputs on the contact page.
+*/
+input {
+  display: block;
+  background: #e9e1dd;
+  border: none;
+  border-radius: 15px;
+  text-indent: 10px;
+  font-size: medium;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-element {
+  width: 60%;
+  min-height: 40px;
+  margin: 15px 0;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: #e9e1dd;
+  cursor: pointer;
+}
+
+textarea {
+  width: 80%;
+  height: 300px;
+  padding: 12px;
+  border-radius: 15px;
+  margin-top: 6px;
+  resize: vertical;
+  font-size: medium;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-email {
+  text-decoration: underline;
+  margin-bottom: 50px;
+  color: #e9e1dd;
+}
+
+.send-email h4 {
+  color: #e9e1dd;
+}
