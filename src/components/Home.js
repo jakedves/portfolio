@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Home() {
   const titles = [
@@ -22,13 +22,34 @@ export default function Home() {
   4. Pause for n seconds
   */
 
+  // useEffect: whenever title changes, start the animation (roll-in), wait 2.4 seconds, roll-out, updateTitle
+  function delay(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+
+  useEffect(() => {
+    delay(2400).then(() => {
+      var titleElement = document.getElementById("my-title");
+
+      titleElement.style.animation = "roll-out 0.3 linear 1";
+      titleElement.style.animationPlayState = "paused";
+      titleElement.style.animationPlayState = "running";
+
+      setTitle((num) => (num + 1) % titles.length);
+
+      titleElement.style.animation = "roll-in 0.3 linear 1";
+      titleElement.style.animationPlayState = "paused";
+      titleElement.style.animationPlayState = "running";
+    });
+  }, [title, titles.length]);
+
   return (
     <div className="home">
       <div className="home-content">
         <h1 className="home-header">Jake Davies</h1>
 
         <div className="title-box">
-          <h3>{titles[title]}</h3>
+          <h3 id="my-title">{titles[title]}</h3>
         </div>
       </div>
     </div>
