@@ -4,6 +4,36 @@
   margin: auto;
 }
 
+/* MOBILE / SMALL SCREEN */
+@media only screen and (max-width: 600px) {
+  .about {
+    margin: 150px auto;
+  }
+
+  .about-text {
+    width: 70%;
+  }
+
+  .about-body {
+    font-size: 5vw;
+  }
+}
+
+/* DESKTOP / TABLET / LARGER SCREEN */
+@media only screen and (min-width: 601px) {
+  .about {
+    margin: 150px auto;
+  }
+
+  .about-text {
+    width: 70%;
+  }
+
+  .about-body {
+    font-size: 5vw;
+  }
+}
+
 .projects .showcase .showcase-item {
   color: #e9e1dd;
   padding: 50px 0;
