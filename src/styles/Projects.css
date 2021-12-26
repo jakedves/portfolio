@@ -1,0 +1,34 @@
+/* PROJECTS SECTION */
+.projects .showcase {
+  width: 80%;
+  margin: auto;
+}
+
+.projects .showcase .showcase-item {
+  color: #e9e1dd;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 60vh;
+}
+
+.projects .showcase .showcase-item img {
+  height: 500px;
+  object-fit: contain;
+  max-width: 24%;
+  border-radius: 15px;
+  margin: 0 20px;
+}
+
+.showcase .right-aligned {
+  text-align: right;
+}
+
+/* Tool Badges */
+.tool {
+  padding: 10px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
