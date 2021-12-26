@@ -7,15 +7,18 @@
 
 .about .about-text {
   margin: 50px auto;
-  max-width: 70%;
   color: #e9e1dd;
 }
 
 .about .about-title {
   margin: 80px 0 0 0;
-  font-size: 120px;
+  font-size: 12vw;
   color: #e9e1dd;
   transition: 0.5s;
+}
+
+.about-body {
+  color: #b3a8a8;
 }
 
 @media (hover: hover) {
@@ -24,7 +27,24 @@
   }
 }
 
-.about .about-body {
-  font-size: 57px;
-  color: #b3a8a8;
+/* MOBILE / SMALL SCREEN */
+@media only screen and (max-width: 600px) {
+  .about-text {
+    width: 80%;
+  }
+
+  .about-body {
+    font-size: 8vw;
+  }
+}
+
+/* DESKTOP / TABLET / LARGER SCREEN */
+@media only screen and (min-width: 601px) {
+  .about-text {
+    width: 70%;
+  }
+
+  .about-body {
+    font-size: 5vw;
+  }
 }
