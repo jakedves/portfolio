@@ -1,5 +1,9 @@
 /*
 This style sheet defines the styles used in the education section.
+
+TODO: SCREEN WIDTH < 1280 => 2x2 grid
+      MOBILE => 1x4 grid
+      DESKTOP => 4x1 grid
 */
 .unit-card-container {
   display: flex;
