@@ -1,4 +1,4 @@
-import ShowcaseItem from "./ShowcaseItem";
+import Project from "./Project";
 import RecipeBuilder from "../images/RecipeBuilderiOS.png";
 import SleepTracker from "../images/SleepAndMood.png";
 import WorldsApart from "../images/WorldsApart.png";
@@ -65,7 +65,7 @@ export default function Projects() {
       <h1 className="section-title">Take a look.</h1>
       <div className="showcase">
         {projects.map((project) => (
-          <ShowcaseItem project={project} rightAligned={false} />
+          <Project project={project} />
         ))}
       </div>
     </div>

@@ -1,12 +1,8 @@
 import BadgeList from "./BadgeList";
 
-export default function ShowcaseItem({ project, rightAligned }) {
+export default function Project({ project }) {
   return (
-    <div
-      className={`showcase-item ${
-        rightAligned ? "right-aligned" : "left-aligned"
-      }`}
-    >
+    <div className={`showcase-item`}>
       {project.image ? (
         <img src={project.image} alt={`${project.name}`} />
       ) : null}
