@@ -1,12 +1,10 @@
 /* ABOUT SECTION */
 .about {
-  min-height: 80vh;
   background: #202020;
-  overflow: auto;
 }
 
 .about .about-text {
-  margin: 50px auto;
+  margin: 0 auto;
   color: #e9e1dd;
 }
 
@@ -29,6 +27,10 @@
 
 /* MOBILE / SMALL SCREEN */
 @media only screen and (max-width: 600px) {
+  .about {
+    margin: 50px auto;
+  }
+
   .about-text {
     width: 80%;
   }
@@ -40,6 +42,10 @@
 
 /* DESKTOP / TABLET / LARGER SCREEN */
 @media only screen and (min-width: 601px) {
+  .about {
+    margin: 150px auto;
+  }
+
   .about-text {
     width: 70%;
   }
