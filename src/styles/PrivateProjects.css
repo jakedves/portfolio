@@ -1,7 +1,8 @@
 .private-projects {
-  padding: 10% 20% 5% 20%;
+  padding: 10% 15% 5% 15%;
 }
 
 .teaser-text {
-  font-size: 2em;
+  text-align: center;
+  font-size: 3vw;
 }
