@@ -1,0 +1,93 @@
+.home {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #fafaf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+Vertical mobile / small tablet exclusive styles
+  */
+@media only screen and (max-width: 600px) {
+  .home-content {
+    width: 90%;
+    height: 30%;
+  }
+
+  .home-content h1 {
+    font-size: 15vw;
+  }
+
+  .title-box h3 {
+    font-size: 6vw;
+  }
+}
+
+/*
+Desktop / large screen exclusive styles
+*/
+@media only screen and (min-width: 601px) {
+  .home-content {
+    width: 40%;
+  }
+
+  .home-content h1 {
+    text-align: center;
+    font-size: 6.8vw;
+    width: 100%;
+  }
+
+  .title-box h3 {
+    font-size: 25px;
+  }
+}
+
+.title-box h3 {
+  font-weight: bold;
+  width: 100%;
+  color: black;
+}
+
+.title-box {
+  background: red;
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Moves the title from a normal position, upwards fading out, so it looks like it's rolling away on a cylinder */
+@keyframes roll-away {
+  0% {
+    transform: translate(0, 0) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, -80%) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+/* Moves the title from an away position (as per roll-away), and brings it back fading in */
+@keyframes roll-in {
+  0% {
+    transform: translate(0, 80%) rotateX(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0) rotateX(0deg);
+    opacity: 1;
+  }
+}
