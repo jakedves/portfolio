@@ -1,6 +1,10 @@
 export default function BadgeList({ tools }) {
   const blackText = ["yellow", "orange", "white", "lightblue", "skyblue"];
 
+  if (tools == null) {
+    return null;
+  }
+
   return tools.map((tool) => {
     return (
       <div

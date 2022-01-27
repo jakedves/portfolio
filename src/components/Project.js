@@ -1,18 +1,16 @@
 import BadgeList from "./BadgeList";
 
+/**
+ * This component is used to display a project as the user scrolls through the website
+ * @param {project object: name, descriptions, image, tools, skills} 
+ * @returns 
+ */
 export default function Project({ project }) {
   return (
-    <div className={`showcase-item`}>
-      {project.image ? (
-        <img src={project.image} alt={`${project.name}`} />
-      ) : null}
-      <div className="showcase-text">
-        {/* attributes here are empty */}
-        <strong>{project.name}</strong>
-        <p>{project.desc}</p>
-
-        {project.tools ? <BadgeList tools={project.tools} /> : null}
-      </div>
+    <div className="project-card"> 
+      <h3 className="project-title">{project.name}</h3>
+      <p className="project-desc-short">{project.shortDesc}</p>
+      <BadgeList tools={project.tools}></BadgeList>
     </div>
-  );
+  )
 }

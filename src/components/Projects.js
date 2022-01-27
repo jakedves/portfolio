@@ -7,10 +7,12 @@ export default function Projects() {
   let projects = [
     {
       name: "Recipe Builder for iOS",
-      desc: `Recipe Builder is the ultimate recipe-building app, made for iOS. It is simple. Fast. Easy to use.
-       Recipe Builder is an app that cuts out all the details of other recipe-building apps. No need to enter the cost
-       of a recipe, how many calories it has, or anything else you don't care about. Aimed at students, Recipe Builder is 
-       the most convenient solution available. Download on the App Store today.`,
+      shortDesc: `Recipe Builder is the ultimate recipe-building app, made for iOS. It is simple. Fast. Easy to use.
+      Aimed at students, it is the most convenient solution available.`,
+      desc: `This app is an iOS app built using the Swift programming language, and Apple's new UI framework, SwiftUI. These
+      technologies allow developers to create iOS apps in a really fast way. I made this app to be a more advanced note-taking app,
+      designed for storing quick recipes easily, without the hassle of other similar apps. With the combination of the NoSQL Core Data
+      database, and CloudKit integration, recipes are always available across devices, which is a convenient way to view recipes while cooking.`,
       image: RecipeBuilder,
       tools: [
         { tool: "Swift", color: "orange" },
@@ -22,8 +24,12 @@ export default function Projects() {
     },
     {
       name: "Sleep & Mood Tracker for Desktop",
+      shortDesc: `A Java application built for Windows and macOS, which allows users to set goals for their sleep and track 
+      how these goals affect their mood.`,
       desc: `This application was built for Windows and macOS devices, and is a Java application that encourages users
-      to be more healthy and meet their sleep requirements, by logging their sleep against their mood and providing insights.`,
+      to be more healthy and meet their sleep requirements, by logging their sleep against their mood and providing insights. We
+      worked as a team of seven to build this project, which we split up into a UI team, database team, and controller team where we followed
+      a Scrum methodology to deliver this project within our deadline.`,
       image: SleepTracker,
       tools: [
         { tool: "Java", color: "orange" },
