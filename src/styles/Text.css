@@ -58,6 +58,20 @@ h6 {
   color: black;
 }
 
+/* MOBILE / SMALL SCREEN */
+@media only screen and (max-width: 750px) {
+  .project-title {
+    font-size: 4vw;
+  }
+}
+
+/* DESKTOP / TABLET / LARGER SCREEN */
+@media only screen and (min-width: 751px) {
+  .project-title {
+    font-size: 3vw;
+  }
+}
+
 #want-to-see-more {
   font-size: 11vw;
 }

@@ -4,41 +4,19 @@
   margin: auto;
 }
 
-/* MOBILE / SMALL SCREEN */
-@media only screen and (max-width: 600px) {
-  
-}
-
-/* DESKTOP / TABLET / LARGER SCREEN */
-@media only screen and (min-width: 601px) {
-  
-}
-
-.projects .showcase .showcase-item {
-  color: #e9e1dd;
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 60vh;
-}
-
-.projects .showcase .showcase-item img {
-  height: 500px;
-  object-fit: contain;
-  max-width: 24%;
+/* Create a background to each project */
+.project-card {
+  width: 90%;
   border-radius: 15px;
-  margin: 0 20px;
-}
-
-.showcase .right-aligned {
-  text-align: right;
+  background: #353535;
+  padding: 20px 20px 10px 20px;
+  margin: 20px 0;
 }
 
 /* Tool Badges */
 .tool {
   padding: 10px;
-  margin: 20px 20px;
+  margin: 15px;
   border-radius: 10px;
   display: inline-block;
 }
