@@ -10,7 +10,7 @@ export default function Project({ project }) {
     <div className="project-card">
       <h3 className="project-title">{project.name}</h3>
       <p className="project-desc-short">{project.shortDesc}</p>
-      <BadgeList tools={project.tools}></BadgeList>
+      <BadgeList badges={project.badges}></BadgeList>
     </div>
   );
 }

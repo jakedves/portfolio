@@ -1,0 +1,12 @@
+.badge {
+  display: block;
+  background: rgb(0, 140, 221);
+  border-radius: 6px;
+  margin: 8px 0;
+  width: 80%;
+}
+
+.badge h6 {
+  font-weight: normal;
+  padding: 5px;
+}

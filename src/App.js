@@ -6,6 +6,7 @@ import "./styles/Projects.css";
 import "./styles/Education.css";
 import "./styles/Teaser.css";
 import "./styles/Contact.css";
+import "./styles/Badges.css";
 import Home from "./components/Home.js";
 import About from "./components/About.js";
 import Projects from "./components/Projects";

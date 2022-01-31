@@ -14,16 +14,20 @@ export default function Projects() {
       designed for storing quick recipes easily, without the hassle of other similar apps. With the combination of the NoSQL Core Data
       database, and CloudKit integration, recipes are always available across devices, which is a convenient way to view recipes while cooking.`,
       image: RecipeBuilder,
-      tools: [
-        { tool: "Swift", color: "orange" },
-        { tool: "SwiftUI", color: "blue" },
-        { tool: "UIKit", color: "skyblue" },
-        { tool: "Core Data", color: "blue" },
-        { tool: "CloudKit", color: "skyblue" },
+      badges: [
+        { content: "Swift & SwiftUI to develop the native iOS app" },
+        {
+          content:
+            "CloudKit and Core Data to manage the user's database with automated syncing across devices",
+        },
+        {
+          content:
+            "Deployed onto the App Store via Xcode and managed via App Store Connect",
+        },
       ],
     },
     {
-      name: "Sleep & Mood Tracker for Desktop",
+      name: "Sleep & Mood Tracker",
       shortDesc: `A Java application built for Windows and macOS, which allows users to set goals for their sleep and track 
       how these goals affect their mood.`,
       desc: `This application was built for Windows and macOS devices, and is a Java application that encourages users
@@ -31,37 +35,51 @@ export default function Projects() {
       worked as a team of seven to build this project, which we split up into a UI team, database team, and controller team where we followed
       a Scrum methodology to deliver this project within our deadline.`,
       image: SleepTracker,
-      tools: [
-        { tool: "Java", color: "orange" },
-        { tool: "Java Swing", color: "yellow" },
-        { tool: "Scrum Methodology", color: "blue" },
-        { tool: "SQL", color: "blue" },
+      badges: [
+        {
+          content: "Object-oriented system built in Java for Windows and macOS",
+        },
+        {
+          content:
+            "Scrum methodology used to plan the project over a fixed duration",
+        },
+        { content: "SQL for local database management for the user's data" },
       ],
     },
     {
       name: "GMTK 2021 Game Jam: Worlds Apart",
+      shortDesc: `A Unity3D game made in only 48 hours for the GMTK 2021 Game Jam, where the theme was 'Joined Together'.`,
       desc: `This game was a submission for a Game Jam, where we have 48 hours to design and develop a game based on the theme:
        'Joined Together'. This game was built using Unity3D, along with C# and developed with pair programming. The concept behind
        the game is that there's two worlds that you exist in simultaneously, and you're trying to bring them back together. Each world
        replies on you to solve a puzzle that's based in the other world to progress.`,
       image: WorldsApart,
-      tools: [
-        { tool: "C#", color: "purple" },
-        { tool: "Unity 3D", color: "grey" },
-        { tool: "Unity Animator", color: "grey" },
-        { tool: "Scripting", color: "red" },
-        { tool: "Pair Programming", color: "green" },
-        { tool: "Level Design", color: "blue" },
+      badges: [
+        {
+          content:
+            "C# Scripting with the Unity 3D engine to develop interactions",
+        },
+        {
+          content:
+            "Animations built with the Unity animator to develop natural motion",
+        },
+        {
+          content:
+            "Pair programming to design each level and develop simultaneously",
+        },
       ],
     },
     {
-      name: "This Website!",
+      name: "jakedavies.dev",
+      shortDesc: `This website was built using HTML, CSS, JavaScript and React, to show off some of my front-end skills`,
       desc: `This website is my portfolio. Built using HTML, CSS, JavaScript and React.`,
-      tools: [
-        { tool: "HTML", color: "red" },
-        { tool: "CSS", color: "blue" },
-        { tool: "JavaScript", color: "yellow" },
-        { tool: "React", color: "blue" },
+      badges: [
+        { content: "HTML, CSS and JavaScript to create a front-end page" },
+        { content: "React used to create declarative components for the UI" },
+        {
+          content:
+            "GitHub pages (with Google domains) to host the website at my URL",
+        },
       ],
     },
   ];
