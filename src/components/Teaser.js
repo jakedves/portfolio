@@ -3,7 +3,7 @@
  * on GitHub. Below this will come the contact me section so that I can
  * be contacted.
  */
-export default function PreviewPrivate() {
+export default function Teaser() {
   let images = [
     {
       path: "",
@@ -27,7 +27,9 @@ export default function PreviewPrivate() {
           );
         })}
       </div>
-      <h1 className="section-title">{teaserTitle}</h1>
+      <h1 id="want-to-see-more" className="section-title">
+        {teaserTitle}
+      </h1>
       <h5 className="teaser-text">{teaserText}</h5>
     </section>
   );

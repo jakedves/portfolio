@@ -1,0 +1,56 @@
+/* ABOUT SECTION */
+.about {
+  background: #202020;
+}
+
+.about .about-text {
+  margin: 0 auto;
+  color: #e9e1dd;
+}
+
+.about .about-title {
+  margin: 80px 0 0 0;
+  font-size: 12vw;
+  color: #e9e1dd;
+  transition: 0.5s;
+}
+
+.about-body {
+  color: #b3a8a8;
+}
+
+@media (hover: hover) {
+  .about-title:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* MOBILE / SMALL SCREEN */
+@media only screen and (max-width: 600px) {
+  .about {
+    margin: 50px auto;
+  }
+
+  .about-text {
+    width: 80%;
+  }
+
+  .about-body {
+    font-size: 8vw;
+  }
+}
+
+/* DESKTOP / TABLET / LARGER SCREEN */
+@media only screen and (min-width: 601px) {
+  .about {
+    margin: 150px auto;
+  }
+
+  .about-text {
+    width: 70%;
+  }
+
+  .about-body {
+    font-size: 5vw;
+  }
+}

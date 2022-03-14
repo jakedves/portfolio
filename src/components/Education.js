@@ -9,7 +9,7 @@ export default function Education() {
     {
       unitTitle: "Machine Learning",
       unitDesc: `A look into a wide variety of techniques used in modern machine learning. Including deep neural networks, and reinforcement learning.
-      This unit had a practical focus on libraries such as sklearn, and TensorFlow.`,
+      This unit had a practical focus on libraries such as sklearn, and TensorFlow via Keras.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM20315.html",
     },
     {
@@ -17,6 +17,7 @@ export default function Education() {
       unitDesc: `This unit was a comprehensive look at the ways we can analyse different data structures and algorithms, and included looking at some more
       advanced and abstract types, and when to apply them.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM20254.html",
+      unitGrade: "83%",
     },
     {
       unitTitle: "Principles of Programming",
@@ -30,6 +31,7 @@ export default function Education() {
       unitDesc: `A study of the fundamental concepts used for graphics rendering, image manipulation, animation and more. This unit provided a way to 
       interact with graphics in WebGL, using Three.js and Python Labs to apply these concepts.`,
       unitLink: "https://www.bath.ac.uk/catalogues/2021-2022/cm/CM20219.html",
+      unitGrade: "80%",
     },
   ];
 

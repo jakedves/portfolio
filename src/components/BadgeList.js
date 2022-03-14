@@ -1,16 +1,12 @@
-export default function BadgeList({ tools }) {
-  const blackText = ["yellow", "orange", "white", "lightblue", "skyblue"];
+export default function BadgeList({ badges }) {
+  if (badges == null) {
+    return null;
+  }
 
-  return tools.map((tool) => {
+  return badges.map((badge) => {
     return (
-      <div
-        className="tool"
-        style={{
-          background: tool.color,
-          color: blackText.includes(tool.color) ? "black" : "white",
-        }}
-      >
-        {tool.tool}
+      <div className="badge">
+        <h6>{badge.content}</h6>
       </div>
     );
   });

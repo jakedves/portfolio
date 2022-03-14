@@ -9,31 +9,6 @@ export default function Contact() {
       <a className="send-email" href="mailto:jakedves@gmail.com">
         <h4>Send me an email</h4>
       </a>
-      {/* <form>
-        <input
-          className="form-element"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Name"
-        ></input>
-        <input
-          className="form-element"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email Address"
-        ></input>
-        <textarea
-          className="form-element"
-          id="subject"
-          name="subject"
-          placeholder="Message"
-        ></textarea>
-        <a href={href}>
-          <input className="form-element" type="submit" value="Send"></input>
-        </a>
-      </form> */}
     </div>
   );
 }
